@@ -2,7 +2,7 @@
   "name": "gemonos/export-bundle",
   "type": "symfony-bundle",
   "autoload": {
-    "psr-4": { "YourCompany\\ExportBundle\\": "src/" }
+    "psr-4": { "Gemonos\\ExportBundle\\": "src/" }
   },
   "require": {
     "php": "^7.4|^8.0",

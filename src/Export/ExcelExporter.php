@@ -10,11 +10,9 @@ use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 class ExcelExporter implements ExporterInterface {
 
-    public const EXPORT_PATH = "/var/temp/export";
-
     public function __construct(
-        private readonly string $publicDir,
-    ){}
+        private readonly string $exportPath,
+    ) {}
 
     /**
      * @throws Exception
@@ -60,7 +58,7 @@ class ExcelExporter implements ExporterInterface {
 
 
         // Générer le fichier Excel
-        $fileName = $this->publicDir . self::EXPORT_PATH . '/export_' . date('Y-m-d_His') . '.xlsx';
+        $fileName = $this->exportPath . '/export_' . date('Y-m-d_His') . '.xlsx';
         $writer = new Xlsx($spreadsheet);
         $writer->save($fileName);
 

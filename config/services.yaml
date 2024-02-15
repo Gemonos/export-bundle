@@ -1,3 +1,5 @@
 services:
   Gemonos\ExportBundle\Export\ExcelExporter:
     public: true
+    arguments:
+      $exportPath: '%gemonos_export.export_path%'
