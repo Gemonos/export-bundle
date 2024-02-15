@@ -1,11 +1,14 @@
 {
   "name": "gemonos/export-bundle",
   "type": "symfony-bundle",
+  "description": "Export entity various file type",
   "autoload": {
-    "psr-4": { "Gemonos\\ExportBundle\\": "src/" }
+    "psr-4": {
+      "Gemonos\\ExportBundle\\": "src/"
+    }
   },
   "require": {
-    "php": "^7.4|^8.0",
+    "php": ">=8.1",
     "symfony/framework-bundle": "^4.4|^5.0|^6.0"
   }
 }
