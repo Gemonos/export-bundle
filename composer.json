@@ -1,0 +1,11 @@
+{
+  "name": "gemonos/export-bundle",
+  "type": "symfony-bundle",
+  "autoload": {
+    "psr-4": { "YourCompany\\ExportBundle\\": "src/" }
+  },
+  "require": {
+    "php": "^7.4|^8.0",
+    "symfony/framework-bundle": "^4.4|^5.0|^6.0"
+  }
+}

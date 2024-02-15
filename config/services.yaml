@@ -1,0 +1,3 @@
+services:
+  Gemonos\ExportBundle\Export\ExcelExporter:
+    public: true
